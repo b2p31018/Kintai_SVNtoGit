@@ -138,14 +138,14 @@
          <td>
          <p>
             <% if day.indicater_reply == "申請中" %>
-              <%= "残業申請が#{day.indicater_reply}" %>
+              <%= "#{day.indicater_check}に残業申請を#{day.indicater_reply}" %>
             <% elsif day.indicater_reply == "承認" || day.indicater_reply == "否認" %>
               <%= "残業申請が#{day.indicater_reply}されました" %>
             <% end %>
          </p>
          <p>
             <% if day.indicater_reply_edit == "申請中" %>
-              <%= "勤怠変更申請が#{day.indicater_reply_edit}" %>
+              <%= "#{day.indicater_check}に勤怠変更申請を#{day.indicater_reply_edit}" %>
             <% elsif day.indicater_reply_edit == "承認" || day.indicater_reply_edit == "否認" %>
               <%= "勤怠変更申請が#{day.indicater_reply_edit}されました" %>
             <% end %>
